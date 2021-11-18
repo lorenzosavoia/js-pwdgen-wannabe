@@ -16,10 +16,17 @@ console.log('Surname: ' + surname);
 let favouriteColour = prompt("What's your favourite colour? ");
 console.log('favourite colour: ' + favouriteColour);
 
-let number = 21;
+// let number = 21;
 
+// chiedo il numero preferito all'utente
+let favoriteNumber = prompt("What is your favorite number?")
+console.log('favorite number: ' + favoriteNumber);
 
+// sommo 5 al numero preferito
+let somma = parseInt(favoriteNumber) + 5;
+console.log('Favorite Number: ' + somma);
 
-let password = userName + surname + favouriteColour + number;
+// calcolo per generare la password
+let password = userName + surname + favouriteColour + somma;
 console.log('password: ' + password);
 document.getElementById('password').innerHTML = '<h1>' + password + '</h1>';
